@@ -1,1 +1,30 @@
-<p>buscador works!</p>
+<h1>Buscando: <small>{{termino}}</small></h1>
+
+<div class="row" *ngIf="person.length == 0 ">
+  <div class="col-md-12">
+    <div class="alert alert-danger" role="alert">
+      No existen resultados en el termino <a class="alert-link">{{termino}}</a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 d-flex aling-items-strech" *ngFor="let pe of person; let i = index">
+      <div class="card">
+        <img class="card-img-top" [src]="pe.img" [alt]="pe.nombre">
+        <div class="card-body">
+          <h5 class="card-title">{{pe.nombre}}</h5>
+          <p class="card-text">{{pe.alias}}</p>
+          <p class="card-text">{{pe.especie}}</p>
+          <p class="card-text">{{pe.nacionalidad}}</p>
+          <p class="card-text">{{pe.fechaNacimiento}}</p>
+          <p class="card-text">{{pe.frase}}</p>
+          <!--<p class="card-text"><small class="text-muted">{{pe.consola}}</small></p>-->
+          <button type="button" (click)="verPersonaj(i)" class="btn btn-outline-primary btn-rounded"
+                  data-mdb-ripple-color="dark">Ver mas ...</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,21 @@
-<p>personas works!</p>
+<h1>Los Personajes en accion de <small>Avenger</small></h1>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 d-flex aling-items-strech" *ngFor="let persona of per; let i = index">
+      <div class="card">
+        <img class="card-img-top" [src]="persona.img" [alt]="persona.nombre">
+        <div class="card-body">
+          <h5 class="card-title">{{persona.nombre}}</h5>
+          <p class="card-text">{{persona.alias}}</p>
+          <p class="card-text">{{persona.especie}}</p>
+          <p class="card-text">{{persona.nacionalidad}}</p>
+          <p class="card-text">{{persona.fechaNacimiento}}</p>
+          <p class="card-text">{{persona.frase}}</p>
+          <!--<p class="card-text"><small class="text-muted">{{per.consola}}</small></p>-->
+          <button type="button" (click)="verPersona(i)" class="btn btn-outline-primary btn-rounded"
+                  data-mdb-ripple-color="dark">Like</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

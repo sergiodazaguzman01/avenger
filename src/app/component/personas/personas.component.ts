@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Persona, PersonaService} from "../../service/personas.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-personas',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonasComponent implements OnInit {
 
-  constructor() { }
+  per: Persona[] = [];
+
+
+  constructor(private _personaService: PersonaService,
+              private router: Router) { }
 
   ngOnInit(): void {
+    this.per = this._personaService.getPersonas();
+  }
+
+  verPersona(idx: number) {
+    this.router.navigate(['/personajever/', idx]);
   }
 
 }
