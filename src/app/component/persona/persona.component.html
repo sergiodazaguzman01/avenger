@@ -1,1 +1,16 @@
-<p>persona works!</p>
+<p>persona </p>
+<h1>{{personaje.nombre}} <small>({{personaje.alias}})</small></h1>
+<div class="row animated fadeIn fast">
+  <div class="col-md-4">
+    <img class="img-fluid" [src]="personaje.img" alt="perosona.nombre">
+    <br><br>
+    <a [routerLink]="['/perosanjever']" class="btn btn-outline-danger btn-block">Regresar</a>
+  </div>
+  <div class="col-md-8">
+    <h3>{{personaje.nombre}}</h3>
+    <hr>
+    <p>
+      {{personaje.alias}}
+    </p>
+   </div>
+</div>

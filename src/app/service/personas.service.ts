@@ -9,9 +9,9 @@ export class  PersonaService {
       nombre: "Hulk",
       alias: "hulkmini",
       especie: "hombre verde musculo",
-      nacionalidad: "veneco",
+      nacionalidad: "Colombiano",
       fechaNacimiento: "10 de enero 2022",
-      frase: "que riko hpta"
+      frase: "Hola"
     }
   ];
 
