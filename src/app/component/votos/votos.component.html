@@ -1,10 +1,12 @@
-<h1> <small>Votación actual</small></h1>
+<link rel="stylesheet" href="votos.component.css"><h1>
+  <h1><small>CONTROL DE VOTACIONES</small></h1></h1>
+<hr>
 <div class="container">
   <div class="row">
     <div class="col-lg-4 d-flex aling-items-strech" *ngFor="let persona of PersonasOrganizadas; let i = index">
       <div class="card">
-        <h1 *ngIf="i==0"> <small>Más me gustas (likes)</small></h1>
-        <h1 *ngIf="i==1"> <small>Más no me gustas (disLikes)</small></h1>
+        <h1 *ngIf="i==0" align="center" > <small>Más &nbsp;&nbsp;<img src="assets/img/like.png" height ="50" width="50" /></small></h1>
+        <h1 *ngIf="i==1" align="center"> <small>Más &nbsp;&nbsp;<img src="assets/img/dislike.png" height ="50" width="50" /></small></h1>
         <img class="card-img-top" [src]="persona.img" [alt]="persona.alias">
         <div class="card-body">
           <h5 class="card-title">{{persona.nombre}}</h5>
@@ -13,8 +15,9 @@
           <p class="card-text">{{persona.nacionalidad}}</p>
           <p class="card-text">{{persona.fechaNacimiento}}</p>
           <p class="card-text"><small class="text-muted">{{persona.frase}}</small></p>
-          <p class="card-text"><small class="text-muted">likes: {{persona.me_gusta}}</small></p>
-          <p class="card-text"><small class="text-muted">disLikes: {{persona.no_me_gusta}}</small></p>
+
+          <p class="card-text"><small class="text-muted"><img src="assets/img/like.png" height ="50" width="50" />&nbsp;&nbsp;{{persona.me_gusta}}</small></p>
+          <p class="card-text" size="10dp"><small class="text-muted"  ><img src="assets/img/dislike.png" height ="60" width="60" />&nbsp;&nbsp;{{persona.no_me_gusta}}</small></p>
 
         </div>
       </div>
