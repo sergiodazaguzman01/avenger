@@ -26,7 +26,7 @@ const APP_ROUTES =  [
   { path: "about", component: AboutComponent },
   { path: "personas", component: PersonasComponent },
   { path: "navbar", component: NovbarComponent },
-  { path: "peronas", component: PersonaComponent },
+  { path: "perona/:id", component: PersonaComponent },
   { path: "buscar/:termino", component: BuscadorComponent },
   { path: "**",pathMatch:"full",redirectTo:"home" }
 ];

@@ -95,7 +95,7 @@ export class  PersonaService {
       frase: "I, Loki, Prince of Asgard, Odinson, the rightful King of Jotunheim, God of Mischief, do hereby pledge to you, my undying fidelity."
     },
     {
-      img: "assets/img/BlackWindow.webp",
+      img: "assets/img/BlackWidow.webp",
       nombre: "Natalia Alianovna Romanoff",
       alias: "Black Widow",
       especie: "Human",
