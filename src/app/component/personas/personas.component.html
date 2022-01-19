@@ -11,19 +11,18 @@
           <p class="card-text">{{persona.nacionalidad}}</p>
           <p class="card-text">{{persona.fechaNacimiento}}</p>
           <p class="card-text">{{persona.frase}}</p>
-          <p class="card-text"><small class="text-muted">likes: {{persona.me_gusta}}</small></p>
-          <p class="card-text"><small class="text-muted">disLikes: {{persona.no_me_gusta}}</small></p>
 
-          <!--<p class="card-text"><small class="text-muted">{{per.consola}}</small></p>-->
-          <button type="button" (click)="setLike(i)" class="btn btn-primary"
-                 data-mdb-ripple-color="dark"> <img src="assets/img/like.png" height ="30" width="30" /></button>
-          <button type="button" (click)="setDisLike(i)" class="btn btn-danger"
-                  data-mdb-ripple-color="dark">
-            <img src="assets/img/dislike.png" height ="30" width="30" /></button>
+          <div class="row">
+             <h3  align="center" > <small class="text-muted">{{persona.me_gusta}}</small></h3>
+            <button type="button" (click)="setLike(i)" class="btn btn-primary"
+                    data-mdb-ripple-color="dark"> <img src="assets/img/like.png" height ="30" width="30" /></button>
+            <h3  align="center" > <small class="text-muted">{{persona.no_me_gusta}}</small></h3>
+           <button type="button" (click)="setDisLike(i)" class="btn btn-danger"
+                    data-mdb-ripple-color="dark">
+              <img src="assets/img/dislike.png" height ="30" width="30" /></button>
+          </div>
         </div>
-
       </div>
     </div>
-
   </div>
 </div>
