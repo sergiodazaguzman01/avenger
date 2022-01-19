@@ -24,7 +24,6 @@ import {PersonaService} from "./service/personas.service";
   ],
   imports: [
     BrowserModule,
-    RouterModule,
     APP_ROUTING
   ],
   providers: [
