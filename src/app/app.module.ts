@@ -3,11 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NovbarComponent } from './component/novbar/novbar.component';
+import { BuscadorComponent } from './component/buscador/buscador.component';
+import { PersonaComponent } from './component/persona/persona.component';
+import { PersonasComponent } from './component/personas/personas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NovbarComponent
+    NovbarComponent,
+    BuscadorComponent,
+    PersonaComponent,
+    PersonasComponent
   ],
   imports: [
     BrowserModule
