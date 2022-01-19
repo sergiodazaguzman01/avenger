@@ -1,0 +1,23 @@
+<h1> <small>Votación actual</small></h1>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 d-flex aling-items-strech" *ngFor="let persona of PersonasOrganizadas; let i = index">
+      <div class="card">
+        <h1 *ngIf="i==0"> <small>Más me gustas (likes)</small></h1>
+        <h1 *ngIf="i==1"> <small>Más no me gustas (disLikes)</small></h1>
+        <img class="card-img-top" [src]="persona.img" [alt]="persona.alias">
+        <div class="card-body">
+          <h5 class="card-title">{{persona.nombre}}</h5>
+          <p class="card-text">{{persona.alias}}</p>
+          <p class="card-text">{{persona.especie}}</p>
+          <p class="card-text">{{persona.nacionalidad}}</p>
+          <p class="card-text">{{persona.fechaNacimiento}}</p>
+          <p class="card-text"><small class="text-muted">{{persona.frase}}</small></p>
+          <p class="card-text"><small class="text-muted">likes: {{persona.me_gusta}}</small></p>
+          <p class="card-text"><small class="text-muted">disLikes: {{persona.no_me_gusta}}</small></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
