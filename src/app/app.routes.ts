@@ -17,16 +17,17 @@ import {NovbarComponent} from "./component/novbar/novbar.component";
 import {PersonasComponent} from "./component/personas/personas.component";
 import {BuscadorComponent} from "./component/buscador/buscador.component";
 import {Router, RouterModule, ROUTES} from "@angular/router";
+import {VotosComponent} from "./component/votos/votos.component";
 
 /**
  * Constante la cual tendrá todas la rutas la cuales se tienen acceso a la aplicación
  */
 const APP_ROUTES =  [
   { path: "home", component: HomeComponent },
-  { path: "about", component: AboutComponent },
+  { path: "votaciones", component: VotosComponent },
   { path: "personas", component: PersonasComponent },
   { path: "navbar", component: NovbarComponent },
-  { path: "perona/:id", component: PersonaComponent },
+  { path: "persona/:id", component: PersonaComponent },
   { path: "buscar/:termino", component: BuscadorComponent },
   { path: "**",pathMatch:"full",redirectTo:"home" }
 ];

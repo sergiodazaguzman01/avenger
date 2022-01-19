@@ -11,7 +11,9 @@ export class  PersonaService {
       especie: "Human",
       nacionalidad: "American",
       fechaNacimiento: "May 29, 1970",
-      frase: "My armor, it was never a distraction or a hobby, it was a cocoon. And now, I'm a changed man. You can take away my house, all my tricks and toys. But one thing you can't take away... I am Iron Man."
+      frase: "My armor, it was never a distraction or a hobby, it was a cocoon. And now, I'm a changed man. You can take away my house, all my tricks and toys. But one thing you can't take away... I am Iron Man.",
+      me_gusta: 0,
+      no_me_gusta: 0
     },
     {
       img: "assets/img/CapAmerica.webp",
@@ -20,7 +22,9 @@ export class  PersonaService {
       especie: "Human",
       nacionalidad: "American",
       fechaNacimiento: "July 4, 1918",
-      frase: "For as long as I can remember, I just wanted to do what was right. I guess I'm not quite sure what that is anymore. And I thought I could throw myself back in and follow orders, serve. It's just not the same."
+      frase: "For as long as I can remember, I just wanted to do what was right. I guess I'm not quite sure what that is anymore. And I thought I could throw myself back in and follow orders, serve. It's just not the same.",
+      me_gusta: 0,
+      no_me_gusta: 0
     },
     {
       img: "assets/img/Thor.webp",
@@ -29,7 +33,9 @@ export class  PersonaService {
       especie: "Asgardian",
       nacionalidad: "Asgardian",
       fechaNacimiento: "964 A.D.–965 A.D.",
-      frase: "It's time for me to be who I am, rather than who I'm supposed to be."
+      frase: "It's time for me to be who I am, rather than who I'm supposed to be.",
+      me_gusta: 0,
+      no_me_gusta: 0
     },
     {
       img: "assets/img/Hulk.webp",
@@ -38,7 +44,9 @@ export class  PersonaService {
       especie: "Human",
       nacionalidad: "American Sakaaran",
       fechaNacimiento: "December 18, 1969",
-      frase: "For years, I've been treating the Hulk like he's some kind of disease... something to get rid of. But then, I start looking at him as the cure. Eighteen months in a gamma lab, I put the brains and the brawn together. And now, look at me. Best of both worlds."
+      frase: "For years, I've been treating the Hulk like he's some kind of disease... something to get rid of. But then, I start looking at him as the cure. Eighteen months in a gamma lab, I put the brains and the brawn together. And now, look at me. Best of both worlds.",
+      me_gusta: 0,
+      no_me_gusta: 0
     },
     {
       img: "assets/img/AntMan.webp",
@@ -47,7 +55,9 @@ export class  PersonaService {
       especie: "Human",
       nacionalidad: "American",
       fechaNacimiento: "NA",
-      frase: "I do some dumb things and the people that I love the most pay the price. Mainly you."
+      frase: "I do some dumb things and the people that I love the most pay the price. Mainly you.",
+      me_gusta: 0,
+      no_me_gusta: 0
     },
     {
       img: "assets/img/SpiderMan.webp",
@@ -56,8 +66,10 @@ export class  PersonaService {
       especie: "Human",
       nacionalidad: "American",
       fechaNacimiento: "August 10, 2001",
-      frase: "Truth is... that this is all my fault. I accidentally brought those dangerous people here. And if those people are watching... just know that I really did try to help you. I mean, I could've killed you. At any given moment, but I didn't. Because my Aunt May taught me that everyone deserves a second chance."
-    },
+      frase: "Truth is... that this is all my fault. I accidentally brought those dangerous people here. And if those people are watching... just know that I really did try to help you. I mean, I could've killed you. At any given moment, but I didn't. Because my Aunt May taught me that everyone deserves a second chance.",
+      me_gusta: 0,
+      no_me_gusta: 0
+     },
     {
       img: "assets/img/DoctorStrange.webp",
       nombre: "Stephen Vincent Strange",
@@ -65,7 +77,9 @@ export class  PersonaService {
       especie: "Human",
       nacionalidad: "American",
       fechaNacimiento: "August 10, 2001",
-      frase: "Truth is... that this is all my fault. I accidentally brought those dangerous people here. And if those people are watching... just know that I really did try to help you. I mean, I could've killed you. At any given moment, but I didn't. Because my Aunt May taught me that everyone deserves a second chance."
+      frase: "Truth is... that this is all my fault. I accidentally brought those dangerous people here. And if those people are watching... just know that I really did try to help you. I mean, I could've killed you. At any given moment, but I didn't. Because my Aunt May taught me that everyone deserves a second chance.",
+      me_gusta: 0,
+      no_me_gusta: 0
     },
     {
       img: "assets/img/CapMarvel.webp",
@@ -74,7 +88,9 @@ export class  PersonaService {
       especie: "Human/Kree Hybrid",
       nacionalidad: "American Kree Imperial",
       fechaNacimiento: "Mid-1960s",
-      frase: "I'm coming to end it. The war, the lies, all of it."
+      frase: "I'm coming to end it. The war, the lies, all of it.",
+      me_gusta: 0,
+      no_me_gusta: 0
     },
     {
       img: "assets/img/BlackPanther.webp",
@@ -83,7 +99,9 @@ export class  PersonaService {
       especie: "Human",
       nacionalidad: "Wakandan",
       fechaNacimiento: "NA",
-      frase: "My name is King T'Challa, son of King T'Chaka. I am the sovereign ruler of the nation of Wakanda. And for the first time in our history, we will be sharing our knowledge and resources with the outside world."
+      frase: "My name is King T'Challa, son of King T'Chaka. I am the sovereign ruler of the nation of Wakanda. And for the first time in our history, we will be sharing our knowledge and resources with the outside world.",
+      me_gusta: 0,
+      no_me_gusta: 0
     },
     {
       img: "assets/img/Loki.webp",
@@ -92,7 +110,9 @@ export class  PersonaService {
       especie: "Frost Giant",
       nacionalidad: "Asgardian Jotun",
       fechaNacimiento: "965 A.D.",
-      frase: "I, Loki, Prince of Asgard, Odinson, the rightful King of Jotunheim, God of Mischief, do hereby pledge to you, my undying fidelity."
+      frase: "I, Loki, Prince of Asgard, Odinson, the rightful King of Jotunheim, God of Mischief, do hereby pledge to you, my undying fidelity.",
+      me_gusta: 0,
+      no_me_gusta: 0
     },
     {
       img: "assets/img/BlackWidow.webp",
@@ -101,7 +121,9 @@ export class  PersonaService {
       especie: "Human",
       nacionalidad: "Russian",
       fechaNacimiento: "December 3, 1984",
-      frase: "I used to have nothing. And then I got this. This job. This family. And I was better because of it. And even though they're gone... I'm still trying to be better."
+      frase: "I used to have nothing. And then I got this. This job. This family. And I was better because of it. And even though they're gone... I'm still trying to be better.",
+      me_gusta: 0,
+      no_me_gusta: 0
     }
   ];
 
@@ -115,6 +137,16 @@ export class  PersonaService {
 
   getPersona(idx: number) {
     return this.persona[idx];
+  }
+  like(idx: number) {
+    let likes: number = this.persona[idx].me_gusta;
+    likes++;
+    this.persona[idx].me_gusta = likes;
+  }
+  disLike(idx: number) {
+    let disLikes: number = this.persona[idx].no_me_gusta;
+    disLikes++;
+    this.persona[idx].no_me_gusta = disLikes;
   }
 
   buscarPersonaje(termino: string): Persona[] {
@@ -130,6 +162,8 @@ export class  PersonaService {
   }
 }
 
+
+
 export interface Persona {
   nombre: string;
   alias: string;
@@ -138,4 +172,6 @@ export interface Persona {
   fechaNacimiento: string;
   frase: string;
   img: string;
+  me_gusta: number;
+  no_me_gusta: number;
 }

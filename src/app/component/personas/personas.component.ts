@@ -23,4 +23,12 @@ export class PersonasComponent implements OnInit {
     this.router.navigate(['/personajever/', idx]);
   }
 
+  public setLike(i:number){
+    this._personaService.like(i);
+
+  }
+  public setDisLike(i:number){
+    this._personaService.disLike(i);
+  }
+
 }

@@ -11,6 +11,7 @@ import { AboutComponent } from './component/about/about.component';
 import {RouterModule} from "@angular/router";
 import {APP_ROUTING} from "./app.routes";
 import {PersonaService} from "./service/personas.service";
+import { VotosComponent } from './component/votos/votos.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {PersonaService} from "./service/personas.service";
     PersonaComponent,
     PersonasComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    VotosComponent
   ],
   imports: [
     BrowserModule,
